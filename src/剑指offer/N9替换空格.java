@@ -1,5 +1,6 @@
 package ½£Ö¸offer;
 
+<<<<<<< HEAD
 public class N9Ìæ»»¿Õ¸ñ  {
 	
 	    public String replaceSpace(StringBuffer str) {
@@ -18,3 +19,8 @@ public class N9Ìæ»»¿Õ¸ñ  {
 }
   
 
+=======
+public class N9Ìæ»»¿Õ¸ñ {
+  public String 
+}
+>>>>>>> branch 'master' of https://github.com/weixiaoqin/offer.git
