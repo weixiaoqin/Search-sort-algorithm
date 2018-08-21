@@ -3,7 +3,7 @@ package 查找排序算法;
 //若扫描结束后，仍未找到关键字等于a的结点，则查找失败。
 
 //适用于线性表的顺序存储结构和链式存储结构。
-//平均查找长度=（n+1）/2
+//平均查找长度=（n+1）/2，时间复杂度，O(n)
 
 public class N01顺序查找 {
 	public static void main(String[] args) {

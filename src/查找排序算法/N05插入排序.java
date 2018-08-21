@@ -1,7 +1,7 @@
 package 查找排序算法;
 //　1、基本思想：每步将一个待排序的记录，按其顺序码大小插入到前面已经排序的字序列的合适位置（从后向前找到合适位置后），直到全部插入排序完为止。
 //复杂度O（n*n）/
-/*插入排序
+/*插入排序,稳定的
  * 
  1从第一个元素开始，该元素可以认为已经被排序
  2 取出下一个元素，在已经排序的元素序列中从后向前扫描 
@@ -15,9 +15,9 @@ public class N05插入排序 {
 		 int[] arr = {1,1,2,0,9,3,12,7,8,3,4,65,22};
 		insertsort(ar);
 		for(int i:ar) {
-			System.out.println(i);
+			//System.out.println(i);
 			// System.out.println(i+",");//用println打印出的数有问题
-			 // System.out.print(i+",");
+			 System.out.print(i+",");
 		}
 	}
  public static  void insertsort(int [] a) {
