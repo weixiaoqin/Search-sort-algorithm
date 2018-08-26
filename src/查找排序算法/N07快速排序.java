@@ -4,8 +4,8 @@ package 查找排序算法;
 //平均O(nlogn),最好O(nlogn),最坏O(n^2);空间复杂度O(nlogn);不稳定;较复杂
 public class N07快速排序 {
 	public static void main(String[] args) {
-		int ar[]=new int[]{70,55,75,1,8};
-		 int[] arr = {1,1,2,0,9,3,12,7,8,3,4,65,22};
+		int arr[]=new int[]{70,55,75,1,8};
+		 int[] ar = {1,1,2,0,9,175,162,599,3,12,7,8,13,4,65,22,23,-8,-6};
 		//quickSort(arr,0,arr.length-1);
 		quickSort(ar,0,ar.length-1);
 		for(int i:ar) {
@@ -19,18 +19,29 @@ public static int partition(int[] a,int low,int high) {// 首先是进行一轮快速排序
 	int key=a[low];//选取基准点
 	while(low<high){
 		while(low<high&&a[high]>=key) high--;
+//		
+//		if(a[high]<key) {
+//			int temp=a[high];
+//			a[high]=key;//a[high]和key 交换
+//			key=temp;
+//		}
 		
 		if(a[high]<key) {
 			int temp=a[high];
-			a[high]=key;//a[high]和key 交换
-			key=temp;
+			a[high]=a[low];//a[high]和a[low] 交换
+			a[low]=temp;
 		}
-		
+	
 		while(low<high&&a[low]<=key)low++;
+//		if(a[low]>key) {
+//			int temp=a[low];
+//			a[low]=key;//a[low]和key 交换
+//			key=a[low];
+//		}
 		if(a[low]>key) {
-			int temp=a[low];
-			a[low]=key;//a[low]和key 交换
-			key=a[low];
+			int temp=a[high];
+			a[high]=a[low];//a[high]和a[low] 交换
+			a[low]=temp;
 		}
 	}
 	return low;
