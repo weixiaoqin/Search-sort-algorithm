@@ -29,7 +29,7 @@ public class H08合并表记录 {
 			TreeMap<Integer, Integer> map=new TreeMap<>();
 			while(sc.hasNext()) {
 				int n=sc.nextInt();
-				for(int i=0;i<n;i++) {
+				for(int i=0;i<n;i++) {//循环读取key 和val
 					int k=sc.nextInt();
 					int v=sc.nextInt();
 					if(map.containsKey(k)) {

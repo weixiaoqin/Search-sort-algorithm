@@ -22,7 +22,7 @@ public class H09提取不重复的整数 {
 		  String s=sc.nextLine();
 		  for(int i=s.length()-1;i>0;i--)
 		  {   char c=s.charAt(i);
-			  if(!list.contains(c)) {
+			  if(!list.contains(c)) {//查看list是否包含c
 				  list.add(c);
 			  }
 		  }

@@ -24,10 +24,12 @@ public class H06质数因子 {
 	public static String getResult(long n) {
 		String s="";
 		int pum=2;
-		while(n!=1) {
-			while(n%pum==0) {//循环除以质数因子
+		while(n!=1)
+		{
+			while(n%pum==0) 
+			{//循环除以质数因子
 				n=n/pum;
-				s=s+pum+" ";
+				s=s+pum+" ";//字符串连接
 			}
 			
 			pum++;//寻找下一个质数因子

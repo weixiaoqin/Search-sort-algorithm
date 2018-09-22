@@ -17,7 +17,8 @@ public class H05进制转换 {
 			Scanner sc=new Scanner(System.in);
 			while(sc.hasNext()) {
 				String s=sc.nextLine();
-				String s1=s.substring(2);
+//				String s1=s.substring(2);
+				String s1=s.substring(2,s.length());
 				int sum=0;
 				int temp=0;
 				
@@ -33,8 +34,8 @@ public class H05进制转换 {
 					else if(ch>='a'&&ch<='f') {
 						temp=ch-'a'+10;
 					}
-					sum=sum+(int)(temp*Math.pow(16, i));
-					
+//					sum=sum+(int)(temp*Math.pow(16, i));
+					sum+=temp*(int)Math.pow(16, i);
 				}
 				System.out.println(sum);
 			}
